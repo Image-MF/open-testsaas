@@ -1,0 +1,8 @@
+[build]
+builder = "dockerfile"
+builderDockerfilePath = "Dockerfile"
+
+[deploy]
+startCommand = "cd server && npm run start"
+restartPolicy = "on-failure"
+restartPolicyRetries = 3
